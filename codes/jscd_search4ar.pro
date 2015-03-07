@@ -9,7 +9,11 @@ ff=0
 ;reading data and pre analysis
 read_sdo,files[ff],hdr,data
 aia_prep,hdr,data,hdr2,data2,/use_hdr,scale_ref=.504
-index2map,hdr2,data2,map
+
+darklimb_correct,data2,data_limp,lambda=6173
+
+
+index2map,hdr2,data_limp,map
 
 
 

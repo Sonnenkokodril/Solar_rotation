@@ -1,0 +1,9 @@
+#Latex tmps
+*.log
+*.synctex.gz
+*.aux
+*.toc
+*.out
+
+#Temporal files
+*~
